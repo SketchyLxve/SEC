@@ -10,17 +10,10 @@ pub fn count(x: &'static str) -> HashMap<char, u32> {
     *chars.entry(c).or_insert(0) += 1;
   }
 
-  let mut highest = 0;
-  for cap in chars.values() {
-    if cap > &highest {
-      highest = *cap;
-    }
-  }
-
-  chars = chars
-    .into_iter()
-    .filter(|&(_k, v)| v == highest)
-    .collect();
+  let highest = *chars.values().max().unwrap_or(&0);
 
   chars
+    .into_iter()
+    .filter(|&(_k, v)| v == highest)
+    .collect()
 }
