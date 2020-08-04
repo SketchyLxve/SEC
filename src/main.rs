@@ -2,7 +2,7 @@ pub mod char_counter;
 
 fn main() {
   let extracted =
-    char_counter::count("please help me, ive been stuck in this basement for several years. he hasnt let me go since he captured me. please send help.");
+    char_counter::count("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam lacinia diam condimentum euismod eleifend. Proin faucibus urna in sagittis pharetra. Integer ut velit et orci rutrum ullamcorper vitae sit amet orci. Maecenas non nisi in magna feugiat accumsan a sed justo. Praesent imperdiet augue velit, eu dapibus lectus luctus a. Ut fringilla quis mi quis ultrices. Proin rhoncus purus ex, euismod bibendum augue viverra venenatis. Maecenas magna neque, tempus nec massa eu, dictum elementum ex. Aliquam ut sapien consequat, viverra ipsum at, tempus ex. Proin non convallis odio. Curabitur tristique augue quam, at maximus turpis posuere et. Maecenas hendrerit tortor quis maximus efficitur. Duis ante tellus, dignissim id aliquet auctor, bibendum ut nisi. Sed velit nisl, consequat eget aliquet sit amet, condimentum a ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.");
 
   println!("{:?}", extracted);
 }
