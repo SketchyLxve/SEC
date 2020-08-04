@@ -1,0 +1,8 @@
+[package]
+name = "algorithms"
+version = "0.1.0"
+authors = ["SketchyLxve <twitchisadeck@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+regex = { version = "1.0" }
